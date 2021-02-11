@@ -1,0 +1,38 @@
+.headroom {
+    //background: rgba($black, 0.4);
+    transition: all 1.5s ease-in-out;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background: rgba(25,99,190,.9);
+    &.headroom--pinned {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        -webkit-box-shadow: 0px 5px 7px -4px rgba(181, 175, 175, 0.2);
+        -moz-box-shadow: 0px 5px 7px -4px rgba(181, 175, 175, 0.2);
+        box-shadow: 0px 5px 7px -4px rgba(181, 175, 175, 0.2);
+        &.headroom--top {
+            position: fixed;
+            box-shadow: none;
+            //background: transparent;
+        }
+        &.headroom--not-top{
+            background: rgba(25,99,190,1);
+        }
+    }
+    &.headroom--top{
+        transform: translateY(0);
+    }
+    
+    &.menu-centre {
+        top: rem(170);
+        &.headroom--top{
+            transform: translateY(170);
+        }
+    }
+}

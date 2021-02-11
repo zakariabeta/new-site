@@ -1,0 +1,10 @@
+//- Generate c-breadcrumb
+mixin c-breadcrumb(labels)
+    nav(aria-label="breadcrumb")
+        ol.breadcrumb
+            each label, index in labels
+                if index + 1 !== labels.length
+                    li(class="breadcrumb-item")
+                        a(href="#")= label
+                else
+                    li(class="breadcrumb-item active")= label

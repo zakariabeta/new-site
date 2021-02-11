@@ -1,0 +1,47 @@
+block vars
+    - var pageTitle = ''
+    - var pageClass = ''
+    - var cssDirLocal = 'assets/styles/'
+    - var cssDirVendor = 'assets/styles/vendor/'
+    - var imgDir = 'medias/images/'
+    - var mediaDir = 'assets/media/'
+    - var jsDirLocal = 'assets/js'
+    - var jsDirVendor = 'assets/js/vendor/'
+    - var lang = 'fr'
+    - var headLess = false
+
+doctype html
+html
+    head
+        //- Title
+        title= pageTitle
+
+        //- Metas
+        include ../assets/_metas
+
+        //- Fonts
+        include ../assets/_fonts
+
+        //- Html5 Shiv
+        //[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]
+
+        //- Styles
+        include ../assets/_styles
+        //- Favicon
+        include ../assets/_favicon
+
+        //- Mixins
+        include ../mixins/_config
+
+    body(class= pageClass)
+        if(!headLess)
+            include ../blocks/_header
+
+        block body
+        
+        if(!headLess)
+            include ../blocks/_footer
+        //-- vendor
+        include ../assets/_scripts
+        //-- local
+        block scripts

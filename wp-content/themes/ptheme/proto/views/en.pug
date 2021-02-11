@@ -1,0 +1,117 @@
+//- layout
+extends layouts/_default
+
+//- settings
+append vars
+    - var pageTitle = 'Mr Abdesslam dahmani'
+    - var pageClass = 'landing-page'
+
+append body
+    section.main.section-main
+        
+            section.section_banner--top
+                .container
+                    .row
+                        .col-sm-12
+                            picture
+                                img(src=imgDir+"hptop.png" alt="")
+    
+            section.section_banner--apropos
+                .container
+                    .row
+                        div.col-sm-6
+                            picture
+                                img(src=imgDir+"img1.png" alt="")
+                        div.col-sm-6
+                            h2 à propos
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+    
+            section.section_banner--law
+                .container
+                    .lawlogos
+                        .row
+                            div.col-sm-3
+                                .logolaw
+                                    .lawcontent
+                                        .lawimg
+                                            picture
+                                                img(src=imgDir+"law1.png" alt="")
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            
+                            div.col-sm-3
+                                .logolaw
+                                    .lawcontent
+                                        .lawimg
+                                            picture
+                                                img(src=imgDir+"law2.png" alt="")
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            
+                            div.col-sm-3
+                                .logolaw
+                                    .lawcontent
+                                        .lawimg
+                                            picture
+                                                img(src=imgDir+"law3.png" alt="")
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            
+                            div.col-sm-3
+                                .logolaw
+                                    .lawcontent
+                                        .lawimg
+                                            picture
+                                                img(src=imgDir+"law4.png" alt="")
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    
+            section.section_banner--contact
+                .container
+                    .row
+                        .col-sm-6
+                            .form-container
+                                form(name='frmContact' id='' method='post' action='' enctype='multipart/form-data' onsubmit='return validateContactForm()')
+                                    .input-row
+                                        label votre nom
+                                            span#userName-info.info
+                                            br
+                                            input#userName.input-field(type='text' name='userName')
+                                    .input-row
+                                        label Email
+                                            span#userEmail-info.info
+                                            br
+                                            input#userEmail.input-field(type='text' name='userEmail')
+                                    .input-row
+                                        label Subject
+                                            span#subject-info.info
+                                            br
+                                            input#subject.input-field(type='text' name='subject')
+                                    .input-row
+                                        label Message
+                                            span#userMessage-info.info
+                                            br
+                                            textarea#content.input-field(name='content' cols='60' rows='6')
+                                    div
+                                        input.btn-submit(type='submit' name='send' value='Send')
+                                        #statusMessage
+                        .col-sm-6
+                            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105512.82415458035!2d-6.670420454191744!3d34.267019750121456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7575f8a6d8643%3A0xc7050653c05e128b!2zS8Opbml0cmE!5e0!3m2!1sfr!2sma!4v1611535614601!5m2!1sfr!2sma' width='100%' height='100%' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')

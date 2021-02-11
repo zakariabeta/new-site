@@ -1,0 +1,79 @@
+// ========================================= //
+// global
+// ========================================= //
+// var
+
+$image : '../../medias/images/';
+
+// ------- color ------- //
+
+$color-bleu1:#082938;
+$color-bleu2:#516872;
+
+// ----- fonts ----- //
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    src: url('../fonts/MyriadPro-Regular.otf');
+    src: url('../fonts/MyriadPro-Regular.otf?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+         url('../fonts/MyriadPro-Regular.woff') format('woff'),
+         url('../fonts/MyriadPro-Regular.eot') format('eot');
+  }
+
+*{
+    outline: none;
+}
+body{
+    padding-top: 94px;
+    @media screen and (min-width:576px) {
+        padding-top: 110px;
+    }
+}
+section {
+    max-width: 100vw;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    line-height: 1;
+    overflow-x: hidden;
+}
+p{
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: justify;
+}
+// ========================================= //
+// emRemConvert
+// ========================================= //
+
+$browser-context: 16; // Default
+
+// Convert px to em
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}
+
+// Convert px to rem
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem
+}
+// ========================================= //
+// vwConvert
+// ========================================= //
+
+$width-context: 1500; // Default
+
+// Convert px to vw //
+@function vw($pixels, $context: $width-context) {
+    @return #{($pixels/1500)*100}vw
+}
+
+
+// ------- transition ------- //
+
+$transition: all 0.5s ease-in-out;

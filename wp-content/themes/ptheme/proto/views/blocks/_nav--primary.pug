@@ -1,0 +1,18 @@
+nav.navbar.navbar-expand-lg
+  .container
+        a(class="navbar-brand" href="#") 
+            h1
+                picture
+                    img.logo(src=imgDir+"logo.png" alt="")
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span
+              i.fas.fa-bars
+
+        div(class="collapse navbar-collapse" id="navbarSupportedContent")
+
+            - var navLevel0 = ['home', 'à propos', 'CONTACTEZ NOUS']
+
+            ul(class="navbar-nav") 
+                each label0, indexI in navLevel0
+                        li(class="nav-item")
+                            a(class="nav-link" href="../en.html")= label0

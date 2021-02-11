@@ -1,0 +1,94 @@
+footer{
+    background-color: $color-bleu1;
+    padding: 40px 0;
+    color: #e6e7e8;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    a{
+        color: #e6e7e8;
+    }
+    .footer-text{
+        .nomsoustitre{
+            p{
+                font-size: 27px;
+                margin-bottom:0 ;
+                line-height: 1;
+                transform: translateY(10px);
+                @media screen and (min-width:576px) {
+                    font-size: 30px;
+                }
+            }
+            span{
+                font-size: 12px;
+                @media screen and (min-width:576px) {
+                    font-size: 13px;
+                }
+            }
+        }
+        .emailp,.siteweb,.tel{
+            span{
+                margin: 0 4px;
+                display: inline-block;
+            }
+            a{
+                text-decoration: none;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    background-color: white;
+                    height: 2px;
+                    left: 0;
+                    bottom: 0;
+                    transition: $transition;
+                }
+                &:hover{
+                    color: #e6e7e8;
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .logo-social{
+        text-align: center;
+        @media screen and (min-width:576px) {
+            text-align: right;
+        }
+        .logo-f{
+            img{
+                max-height: 100px;
+                width: auto;
+                margin-bottom: 40px;
+            }
+        }
+        .social{
+            a{
+                text-align: center;
+                margin: 0 16px;
+                @media screen and (min-width:576px) {
+                    text-align: right;
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+                i{
+                    transition: $transition;
+                    font-size: 24px;
+                }
+                &:hover{
+                    color: #e6e7e8;
+                    i{
+                        opacity: .75;
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+    
+}

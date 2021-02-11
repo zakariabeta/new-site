@@ -1,0 +1,124 @@
+// ========================================= //
+// content
+// ========================================= //
+
+
+.section_banner{
+    &--top{
+        position: relative;
+        max-height: 432px;
+        overflow: hidden;
+        picture{
+            position: relative;
+            display: block;
+            img{
+                width: 100%;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba( $color-bleu1 , 0.4);
+                z-index: 1;
+            }
+        }
+    }
+    &--apropos{
+        padding: 20px 0px;
+        h2{
+            text-transform: uppercase;
+            margin-top: 20px;
+            text-align: center;
+            @media screen and (min-width:576px) {
+                margin-top: auto;
+            }
+        }
+        p,h2{
+            color: $color-bleu1;
+        }
+    }
+    &--law{
+        .lawlogos{
+            background-color: $color-bleu1;
+            padding: 40px 8px;
+            overflow-x: hidden;
+            @media screen and (min-width:576px) {
+                padding: 40px 0;
+            }
+        }
+        .logolaw{
+            @media screen and (min-width:576px) {
+                max-height: 150px;
+                overflow: hidden;
+                &:hover{
+                    .lawcontent{ 
+                        .lawimg{
+                            opacity: 0;
+                        }
+                        transform: translateY(-150px);
+                    }    
+                }
+            }
+            .lawcontent{
+                transition: $transition;   
+                .lawimg{
+                    transition: $transition;  
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+
+                }
+                p{
+                    text-align: center;
+                    padding: 20% 0;
+                    color: white;
+                }
+            }
+        }
+    }
+    &--contact{
+        padding: 20px 0;
+        .maps{   
+            height: 400px;
+            @media screen and (min-width:576px) {
+                height: 100%;
+            }
+        }
+        .input-row{
+            margin-bottom: 12px;
+            label{
+                color: $color-bleu1;
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+                font-weight: 700;
+                width: 100%;
+                .input-field{
+                    border: none;
+                    margin-top: 8px;
+                    background-color: $color-bleu1;
+                    color: white;
+                    padding: 8px 16px;
+                    width: 100%;
+                }
+            }
+        }
+        .btn-submit{
+            display: block;
+            margin: 8px auto 16px;
+            padding: 12px 40px;
+            border: none;
+            background-color: #efefef;
+            transition: $transition;
+            &:hover,&:focus{
+                box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
