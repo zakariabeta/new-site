@@ -9,23 +9,27 @@ nav{
         }
     }
     .navbar-toggler{
-        color: white;
+        color: rgb(116, 65, 65);
     }
     #navbarSupportedContent{
-        .navbar-nav{
+        & > div{
+            width: 100%;
+        }
+        .navbar-nav,.menu{
             justify-content: flex-end;
             width: 100%;
-            .nav-item{
+            .menu-item,.nav-item{
                 text-transform: uppercase;
                 margin-bottom: 16px;
                 @media screen and (min-width:576px) {
                     margin-left: 40px;
                     margin-bottom: 4px;
                 }
-                .nav-link{
+                a,.nav-link{
                     padding: 0;
                     position: relative;
                     color: $color-bleu2;
+                    text-decoration: none;
                     &::before{
                         position: absolute;
                         content: '';
@@ -38,6 +42,7 @@ nav{
                     }        
                     @media screen and (min-width:576px) {
                         &:hover{
+                            text-decoration: none;
                             &::before{
                                 width: 100%;
                             }

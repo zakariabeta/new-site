@@ -9,3 +9,14 @@ function load_scripts(){
     wp_enqueue_script( 'App', get_template_directory_uri() . '/proto/app/assets/js/min/app.min.js', array('jquery'), 'all', true );
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
+
+register_nav_menus(
+	array(
+		'my_main_menu' => 'Main Menu',
+		'footer_menu' => 'Footer Menu',
+	)
+);
+
+function jetblack_pulse_setup() {
+    load_child_theme_textdomain( 'Avocat', get_stylesheet_directory() . '/languages' );
+}

@@ -9,16 +9,15 @@
 </head>
 <body <?php body_class(); ?> >
 	<header class="headroom headroom--top headroom--not-bottom">
-		<section class="top-bar">
-			<div class="social-media-icons">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container"><a class="navbar-brand" href="#"> 
+				<h1>
+				<picture><img class="logo" src="../wp-content/uploads/2021/02/logo.png" alt=""></picture>
+				</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<?php wp_nav_menu( array( 'theme_location' => 'my_main_menu','menu_class' => 'navbar-nav' ) ); ?>
 			</div>
-			<div class="search">
 			</div>
-		</section>
-		<section class="menu-area">
-			<section class="logo">
-			</section>
-			<nav class="main-menu navbar navbar-expand-lg">
-			</nav>
-		</section>
-	</header>
+		</nav>
+		</header>

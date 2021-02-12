@@ -55,7 +55,7 @@
                     <div class="lawimg">
                       <picture><img src="medias/images/law1.png" alt=""></picture>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                    <p><?php _e("Lorem ipsum dolor sit amet, consectetuer adipiscing elit","Avocat");?></p>
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@
                     <div class="lawimg">
                       <picture><img src="medias/images/law2.png" alt=""></picture>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                    <p><?php _e("Lorem ipsum dolor sit amet, consectetuer adipiscing elit","Avocat");?></p>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                     <div class="lawimg">
                       <picture><img src="medias/images/law3.png" alt=""></picture>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                    <p><?php _e("Lorem ipsum dolor sit amet, consectetuer adipiscing elit","Avocat");?></p>
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                     <div class="lawimg">
                       <picture><img src="medias/images/law4.png" alt=""></picture>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                    <p><?php _e("Lorem ipsum dolor sit amet, consectetuer adipiscing elit","Avocat");?>,</p>
                   </div>
                 </div>
               </div>
@@ -100,22 +100,25 @@
               <div class="form-container">
                 <form name="frmContact" id="" method="post" action="" enctype="multipart/form-data" onsubmit="return validateContactForm()">
                   <div class="input-row">
-                    <label>votre nom<span class="info" id="userName-info"></span><br>
+                    <label><?php _e("votre nom","Avocat");?><span class="info" id="userName-info"></span><br>
                       <input class="input-field" id="userName" type="text" name="userName">
                     </label>
                   </div>
                   <div class="input-row">
-                    <label>Email<span class="info" id="userEmail-info"></span><br>
+                    <label><?php _e("Email","Avocat");?><span class="info" id="userEmail-info"></span><br>
                       <input class="input-field" id="userEmail" type="text" name="userEmail">
                     </label>
                   </div>
                   <div class="input-row">
-                    <label>Subject<span class="info" id="subject-info"></span><br>
+                    <label><?php _e("Subject","Avocat");?><span class="info" id="subject-info"></span><br>
                       <input class="input-field" id="subject" type="text" name="subject">
                     </label>
                   </div>
                   <div class="input-row">
-                    <label>Message<span class="info" id="userMessage-info"></span><br>
+                    <label><?php _e("Message","Avocat");?><span class="info" id="userMessage-info">
+                    <?php esc_html_e( 'Select Menu:', 'jetblack-pulse' ); ?>
+
+                    </span><br>
                       <textarea class="input-field" id="content" name="content" cols="60" rows="6"></textarea>
                     </label>
                   </div>
