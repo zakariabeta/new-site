@@ -1,5 +1,11 @@
 <?php get_header(); ?>
-	<div class="content-area main section-main">
+	
+<?php get_footer(); ?>
+
+
+
+<!-- 
+<div class="content-area main section-main">
       <section class="slide section_banner--top">
         <div class="container">
           <div class="row">
@@ -18,7 +24,8 @@
             <div class="col-sm-6">
               <h2>à propos</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -138,5 +145,4 @@
         </div>
       </section>	
 		</section>
-	</div>
-<?php get_footer(); ?>
+	</div>   -->

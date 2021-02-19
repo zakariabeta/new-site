@@ -17,6 +17,6 @@ register_nav_menus(
 	)
 );
 
-function jetblack_pulse_setup() {
-    load_child_theme_textdomain( 'Avocat', get_stylesheet_directory() . '/languages' );
-}
+// function translate( $text, $domain = 'default' ) {
+//     return translate( $text, $domain );
+// }
